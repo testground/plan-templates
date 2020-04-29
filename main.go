@@ -7,7 +7,7 @@ import (
 
 func main() {
 	var ts templates.TemplateSet
-	err := templates.Fill("/go-templates", &ts)
+	err := templates.Fill(".", &ts)
 	if err != nil {
 		panic(err)
 	}
