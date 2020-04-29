@@ -7,7 +7,7 @@ import (
 
 func main() {
 	var ts templates.TemplateSet
-	err := templates.Fill("/go-templates", ts)
+	err := templates.Fill("/go-templates", &ts)
 	if err != nil {
 		panic(err)
 	}
@@ -15,6 +15,7 @@ func main() {
 	for _, t := range ts {
 		fmt.Printf("\n\n---------------------\n")
 		fmt.Println(t.Filename)
+		fmt.Printf("---------------------\n\n")
 		fmt.Println(t.Template)
 	}
 }
