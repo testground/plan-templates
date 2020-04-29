@@ -25,7 +25,7 @@ func fillWalk(t TemplateSet) filepath.WalkFunc {
 		if filepath.Ext(fn) != extension {
 			return nil
 		}
-		buf, err := ioutil.ReadFile(fn)
+		buf, err := ioutil.ReadFile(path)
 		if err != nil {
 			return err
 		}
