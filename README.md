@@ -2,6 +2,8 @@
 
 Templates for `testground plan create`
 
+## Issues
+Please report issues in the testground/testground repo.
 
 ## description:
 
